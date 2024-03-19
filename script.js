@@ -1,7 +1,7 @@
 // Simulação de dados de eventos esportivos
 var eventos = [
-    { id: 1, esporte: "Futebol", time1: "Time A", time2: "Time B", odd1: 1.75, oddEmpate: 3.00, odd2: 2.25 },
-    { id: 2, esporte: "Basquete", time1: "Time C", time2: "Time D", odd1: 1.90, oddEmpate: 2.10, odd2: 1.95 }
+    { id: 1, esporte: "Futebol", time1: "Botafogo RJ", time2: "Flamengo", odd1: 1.75, oddEmpate: 3.00, odd2: 2.25 },
+    { id: 2, esporte: "Basquete", time1: "Golden State Wariors", time2: "Chicago Bulls", odd1: 1.90, oddEmpate: 2.10, odd2: 1.95 }
 ];
 
 $(document).ready(function() {
