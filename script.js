@@ -9,7 +9,7 @@ $(document).ready(function() {
     eventos.forEach(function(evento) {
         var elementoEvento = `
             <div class="evento" data-id="${evento.id}">
-                <h2>${evento.ligagit}</h2>
+                <h2>${evento.liga}</h2>
                 <p>${evento.time1} vs ${evento.time2}</p>
                 <p>Odds: ${evento.odd1} - ${evento.oddEmpate} - ${evento.odd2}</p>
                 <button class="botao-aposta" onclick="apostar(${evento.id}, 'time1')">Apostar no ${evento.time1}</button>
