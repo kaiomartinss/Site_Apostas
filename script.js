@@ -1,7 +1,7 @@
 // Simulação de dados de eventos esportivos
 var eventos = [
-    { id: 1, esporte: "Futebol", time1: "Botafogo RJ", time2: "Flamengo", odd1: 1.75, oddEmpate: 3.00, odd2: 2.25 },
-    { id: 2, esporte: "Basquete", time1: "Golden State Wariors", time2: "Chicago Bulls", odd1: 1.90, oddEmpate: 2.10, odd2: 1.95 }
+    { id: 1, liga: "Brasileirão Serie A", time1: "Botafogo RJ", time2: "Flamengo", odd1: 1.75, oddEmpate: 3.00, odd2: 2.25 },
+    { id: 2, liga: "NBA", time1: "Golden State Wariors", time2: "Chicago Bulls", odd1: 1.90, oddEmpate: 2.10, odd2: 1.95 }
 ];
 
 $(document).ready(function() {
@@ -9,7 +9,7 @@ $(document).ready(function() {
     eventos.forEach(function(evento) {
         var elementoEvento = `
             <div class="evento" data-id="${evento.id}">
-                <h2>${evento.esporte}</h2>
+                <h2>${evento.ligagit}</h2>
                 <p>${evento.time1} vs ${evento.time2}</p>
                 <p>Odds: ${evento.odd1} - ${evento.oddEmpate} - ${evento.odd2}</p>
                 <button class="botao-aposta" onclick="apostar(${evento.id}, 'time1')">Apostar no ${evento.time1}</button>
